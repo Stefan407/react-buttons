@@ -1,0 +1,88 @@
+.btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 500;
+  color: #fcfcfc;
+  font-family: "AvenirNextCyr";
+  transition: 0.5s;
+  border: 0;
+
+  &:hover {
+    background: #402c77;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 8px rgba(227, 218, 255, 1);
+  }
+  &:active {
+    background: #14142b;
+  }
+
+  &__disabled {
+    background: #593da6;
+    opacity: 0.5;
+  }
+
+  &__primary {
+    background: #593da6;
+    color: #fff;
+  }
+
+  &__large {
+    padding: 20px 32px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+  }
+
+  &__medium {
+    padding: 16px 24px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+  }
+
+  &__small {
+    padding: 12px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+
+  &__noIcon .icon {
+    display: none;
+  }
+
+  &__rightIcon {
+    flex-direction: row;
+  }
+
+  &__rightIcon .icon {
+    margin-left: 16px;
+  }
+
+  &__leftIcon .icon {
+    margin-right: 16px;
+  }
+
+  &__leftIcon {
+    flex-direction: row-reverse;
+  }
+
+  &__onlyIcon {
+    padding: 20px;
+  }
+
+  &__onlyIcon {
+    padding: 12px;
+  }
+
+  &__onlyIcon span {
+    display: none;
+  }
+}
